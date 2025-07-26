@@ -1,0 +1,87 @@
+# Download-Sort Script Konfiguration
+
+# Downloads-Ordner (leer lassen für Standard)
+download_folder: "~/Downloads"
+
+# Dateitypen-Kategorien
+file_categories:
+  PDFs:
+    - .pdf
+  Documents:
+    - .txt
+    - .doc
+    - .docx
+    - .xls
+    - .xlsx
+    - .ppt
+    - .pptx
+    - .odt
+    - .ods
+    - .odp
+  Images:
+    - .jpg
+    - .jpeg
+    - .png
+    - .gif
+    - .svg
+    - .psd
+    - .ai
+    - .eps
+    - .raw
+    - .indd
+    - .tif
+    - .tiff
+    - .bmp
+    - .webp
+  Files:
+    - .zip
+    - .rar
+    - .dmg
+    - .exe
+    - .pkg
+    - .iso
+    - .tar
+    - .gz
+    - .7z
+    - .deb
+    - .rpm
+  Videos:
+    - .mp4
+    - .avi
+    - .mkv
+    - .mov
+    - .wmv
+    - .flv
+    - .webm
+    - .m4v
+  Music:
+    - .mp3
+    - .m4a
+    - .flac
+    - .wav
+    - .aac
+    - .ogg
+    - .wma
+
+# Einstellungen
+settings:
+  # Logging aktivieren
+  enable_logging: true
+  # Log-Datei
+  log_file: "download_sort.log"
+  # Konfliktbehandlung (rename, skip, overwrite)
+  conflict_handling: "rename"
+  # Nur Dateien, keine Ordner verschieben
+  move_files_only: true
+  # Trockenlauf (nur anzeigen, nicht verschieben)
+  dry_run: false
+  # Backup-Einstellungen
+  backup:
+    # Backup vor Sortierung erstellen
+    create_backup: true
+    # Backup-Ordner (leer für Desktop)
+    backup_location: "~/Desktop"
+    # Backup-Namen-Format
+    backup_name_format: "Downloads_Backup_{timestamp}"
+    # Alte Backups löschen (Anzahl zu behaltender Backups)
+    keep_backups: 5 

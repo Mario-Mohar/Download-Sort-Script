@@ -2,6 +2,6 @@
 
 echo "Creating executable file..."
 
-chmod +x sort_download.py
+chmod +x sort_download_improved.py
 
 echo "Done!"
